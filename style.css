@@ -56,5 +56,8 @@ body {
   color: var(--main-color)
 }
 
+.scroll {
+  text-align: right;
+
 
 /* Background image: Photo by Leone Venter on Unsplash  */
