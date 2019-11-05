@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,36 +8,81 @@
     <title>Zofia Natanek | Front-end developer</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Advent+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <script>
+        function myScroll() {
+            var elem = document.getElementById("menu");
+            elem.scrollIntoView({behavior: "smooth"});
+        }
+    </script>
+
+    <main class="home" id="home">
+        <article class="descript">
+            <h3 class="descript__header">
+                Hello.
+            </h3>
+            <p class="descript__p">
+                My name is <span class="name">Zofia Natanek</span> I am begginner Front-end developer. Feel welcome to
+                check my projects.
+            </p>
+            <div class="descript__scroll"><img onclick="myScroll()" class="descript__arrow" src="./images/arrow.png" alt="arrow"
+                    width="30px"></div>
+        </article>
+    </main>
     <div class="content">
-        <header class="home" id="home"> 
-            <article class="descript">
-                <h3 class="hello">
-                    Hello.
-                </h3>
-                <p>
-                    My name is <span class="name">Zofia Natanek</span> I am begginner Front-end developer. Feel welcome to check my projects.
-                </p>
-                <div class="scroll"><span>Click</span></div>
-            </article>
-        </header>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Pojects</a>
-            <a href="#contact">Contact</a>
+        <nav class="menu" id="menu">
+            <ul class="menu__list">
+                <li class="menu__listitem"><a class="menu__links" href="#home">Home</a></li>
+                <li class="menu__listitem"><a class="menu__links" href="#about">About</a></li>
+                <li class="menu__listitem"><a class="menu__links" href="#projects">Pojects</a></li>
+                <li class="menu__listitem"><a class="menu__links" href="#contact">Contact</a></li>
+            </ul>
         </nav>
-        <section class="about">
-            <h4>About me</h4>
+        <section class="about" id="about">
+            <article class="about__me">
+                <h4 class="about__header">About me</h4>
+                <p class="about__p">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus. Eget nullam non nisi est
+                    sit
+                    amet facilisis magna etiam.
+                </p>
+                <p class="about__p">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua.
+                </p>
+            </article>
+            <article class="about__techno">
+                <h3 class="techno__header">Technologies</h3>
+                <ul class="techno__container">
+                    <li class="techno__item1"> <img src="./images/html5.png" alt="html"> <br><span class="item__span">HTML5</span></li>
+                    <li class="techno__item1"> <img src="./images/css-3.png" alt="css"><span class="item__span">HTML5</span></li>
+                    <li class="techno__item1"> <img src="./images/js.png" alt="js"><span class="item__span">HTML5</span></li>
+                    <li class="techno__item1"> <img src="./images/devices.png" alt="rwd"><span class="item__span">HTML5</span></li>
+                    <li class="techno__item2"> <img src="./images/sass.png" alt="sass"><span class="item__span">HTML5</span></li>
+                    <li class="techno__item2"> <img src="./images/bootstrap.png" alt="bootstrap"><span class="item__span">HTML5</span></li>
+                    <li class="techno__item2"> <img src="./images/react.png" alt="react"><span class="item__span">HTML5</span></li>
+                    <li class="techno__item2"> <img src="./images/git.png" alt="git"><span class="item__span">HTML5</span></li>
+                </ul>
+
+            </article>
+
         </section>
-        <section class="work">
+        <section class="projects" id="projects">
             <h4>Projects</h4>
         </section>
-        <section class="contact">
+        <footer class="contact" id="contact">
             <h4>Contact</h4>
-        </section>
+        </footer>
     </div>
+
 </body>
+
 </html>
