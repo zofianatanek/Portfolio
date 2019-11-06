@@ -14,13 +14,6 @@
 </head>
 
 <body>
-    <script>
-        function myScroll() {
-            var elem = document.getElementById("menu");
-            elem.scrollIntoView({ behavior: "smooth" });
-        }
-    </script>
-
     <main class="home" id="home">
         <article class="descript">
             <h3 class="descript__header">
@@ -144,7 +137,7 @@
         <h4 class="contact__header">Contact</h4>
         <div class="contact__info">
             <section class="form">
-                <form  class="contact__form">
+                <form class="contact__form">
                     <input class="form__name" type="text" id="name" placeholder="Full name"> <input class="form__email"
                         type="email" id="email" placeholder="E-mail adress"><br>
                     <textarea class="form__textarea" name="" id="" cols="47" rows="10" placeholder="Message"></textarea>
@@ -160,7 +153,25 @@
 
         </form>
     </footer>
-
+    <script>
+            function myScroll() {
+                var elem = document.getElementById("menu");
+                elem.scrollIntoView({ behavior: "smooth" });
+            }
+    
+            var menu = document.getElementById("menu");
+            var fixed = menu.offsetTop;
+    
+            function onScrolling() {
+     
+                if (window.pageYOffset >= fixed) {
+                    menu.classList.add("menu__fixed")
+                } else {
+                    menu.classList.remove("menu__fixed");
+                }
+            }
+            window.onscroll = function () { onScrolling() }
+        </script>
 </body>
 
 </html>
