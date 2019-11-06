@@ -8,12 +8,9 @@
 :root {
   --main-color: #D1A23E;
   --second-color: #57534C;
-}
-
-body {
-    background-color: #E9E9E9;
-    font-family: 'Roboto', sans-serif;
-    color: var(--second-color)
+  background-color: #E9E9E9;
+  font-family: 'Roboto', sans-serif;
+  color: var(--second-color)
 }
 
 /* HOME SECTION */
@@ -32,7 +29,7 @@ body {
 
 }
 
-/* RESOLUTION < 450px */
+/* ---------------------------RESOLUTION < 450px--------------------------- */
 
 @media only screen and (max-width: 450px){
   .home {
@@ -64,18 +61,32 @@ body {
   .descript__arrow {
     float: none;
   }
-  .about {
-    display: flex;
-    flex-direction: column;
-  }
-
   .menu__list {
     padding: 0;
     max-width: 100%;
     text-align: left;
   }
+  .about {
+    display: block;
+  }
+  .about__header {
+    font-size: 16px;
+  } 
+  .header {
+    font-size: 16px;
+  }
+  .techno__item {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 0 46%;
+    margin: 2%;
+  } 
+  .techno__item img {
+    max-width: 100%;
+  }
+
 }
-/* 450px < RESOLUTION < 599px */
+/* ---------------------------450px < RESOLUTION < 599px--------------------------- */
 
 @media only screen and (min-width: 450px){
   
@@ -99,19 +110,31 @@ body {
      float: right;
    }
    .about {
-     height: 50vh;
-     display: flex;
-     flex-direction: column;
+    display: block;
    }
-   .about__techno {
-     height: 50vh;
-   }
+   .about__header {
+    font-size: 18px;
+  }
+   .header {
+    font-size: 18px;
+  }
+   .techno__item {
+    flex: 1 0 21%;
+    height: 150px;
+  }  
+
+    /* --------------Projects-------------- */
+    .projects__container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
  }
-/* RESOLUTION > 600px */
+/* ---------------------------RESOLUTION > 600px--------------------------- */
 
 @media only screen and (min-width: 600px){
 
-  /* Home section */
+  /* --------------Home section-------------- */
   .home {
     display: flex;
     flex-direction: column;
@@ -132,8 +155,9 @@ body {
     float: right;
   }
 
-    /* About me section */
+    /* --------------About me section-------------- */
   .about {
+    height: 100vh;
     display: flex;
     flex-direction: row-reverse;
   }
@@ -146,10 +170,27 @@ body {
   .about__techno {
     width: 60%;
   }
+  .header {
+    font-size: 20px;
+  }
+  .techno__item {
+    flex: 1 0 21%;
+    height: 150px;
+  }
+/* --------------Projects-------------- */
+  .projects__container {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
-/* GLOBAL */
+/* ----------------------------GLOBAL---------------------------- */
 
+.content {
+  display: block;
+}
 .descript {
   text-align: justify;
 }
@@ -221,18 +262,12 @@ body {
 }
 
 /* ABOUT SECTION */
-.about {
-  height: 100vh;
-}
 
 /* ABOUT ME */
 .about__me {
   color: white;
   background-color: var(--main-color);
   padding: 5% 5% 2% 2%;
-  /* padding-left: 5%;
-  padding-right: 5%;
-  padding-bottom: 10%; */
   text-align: justify;
 }
 
@@ -245,14 +280,12 @@ body {
 }
 
 .about__techno {
-  padding: 5% 2% 2% 5%;
+  padding: 5% 4% 2% 5%;
 }
 
 /* TECHNOLOGIES */
 
 .techno__container {
-  max-height: 100%;
-  max-width: 80%;
   list-style: none;
   margin: 10% 0 10% 0;
   display: flex;
@@ -261,22 +294,26 @@ body {
   align-items: center;
   padding: 0;
 }
-.techno__item1 { 
-  width: 100px;
-  margin: 10px 20px 10px 20px;
+.techno__item {
   text-align: center;
 }
-.techno__item1:hover {
+.techno__item:hover {
+  position: relative;
   transition: all .2s ease-in-out; 
   transform: scale(1.3);
+  animation: floattext 2s inifnite;
 }
 
 .item__span {
+  display: none;
   position: relative;
-  animation: floattext 2s infinite;
+  animation: floattext 0.5s;
+  animation-play-state: paused;
+  color: var(--main-color);
 }
-
-.item__span:hover {
+.techno__item:hover > .item__span{
+  display: block;
+  position: relative;
   animation-play-state: running;
 }
 
@@ -286,17 +323,33 @@ body {
   100% {opacity: 100%; top: 0px}
 }
 
-.techno__item2{
-  order: 1;
-  width: 100px;
-  margin: 10px;
+/* PROJECTS SECTION */
+
+.projects {
+  padding: 2% 5% 2% 5%;
+}
+.projects__card {
+  margin-top: 5%;
   text-align: center;
+  max-width: 300px;
+}
+.projects_foto {
+  max-width: 300px;
+  height: auto;
+}
+.projects__info {
+  text-align: justify;
+}
+.projects__details {
+  text-align: justify;
 }
 
-.techno__item2:hover {
-  transition: all .2s ease-in-out; 
-  transform: scale(1.3);
-}
+/* FOOTER */
 
+.footer {
+  margin-top: 30px;
+  display: flex;
+}
 
 /* Background image: Photo by Leone Venter on Unsplash  */
+/* Photo by Daniel Korpai on Unsplash */

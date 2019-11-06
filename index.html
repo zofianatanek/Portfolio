@@ -17,7 +17,7 @@
     <script>
         function myScroll() {
             var elem = document.getElementById("menu");
-            elem.scrollIntoView({behavior: "smooth"});
+            elem.scrollIntoView({ behavior: "smooth" });
         }
     </script>
 
@@ -30,11 +30,10 @@
                 My name is <span class="name">Zofia Natanek</span> I am begginner Front-end developer. Feel welcome to
                 check my projects.
             </p>
-            <div class="descript__scroll"><img onclick="myScroll()" class="descript__arrow" src="./images/arrow.png" alt="arrow"
-                    width="30px"></div>
+            <div class="descript__scroll"><img onclick="myScroll()" class="descript__arrow" src="./images/arrow.png"
+                    alt="arrow" width="30px"></div>
         </article>
     </main>
-    <div class="content">
         <nav class="menu" id="menu">
             <ul class="menu__list">
                 <li class="menu__listitem"><a class="menu__links" href="#home">Home</a></li>
@@ -60,28 +59,71 @@
                 </p>
             </article>
             <article class="about__techno">
-                <h3 class="techno__header">Technologies</h3>
+                <h3 class="header">Technologies</h3>
                 <ul class="techno__container">
-                    <li class="techno__item1"> <img src="./images/html5.png" alt="html"> <br><span class="item__span">HTML5</span></li>
-                    <li class="techno__item1"> <img src="./images/css-3.png" alt="css"><span class="item__span">HTML5</span></li>
-                    <li class="techno__item1"> <img src="./images/js.png" alt="js"><span class="item__span">HTML5</span></li>
-                    <li class="techno__item1"> <img src="./images/devices.png" alt="rwd"><span class="item__span">HTML5</span></li>
-                    <li class="techno__item2"> <img src="./images/sass.png" alt="sass"><span class="item__span">HTML5</span></li>
-                    <li class="techno__item2"> <img src="./images/bootstrap.png" alt="bootstrap"><span class="item__span">HTML5</span></li>
-                    <li class="techno__item2"> <img src="./images/react.png" alt="react"><span class="item__span">HTML5</span></li>
-                    <li class="techno__item2"> <img src="./images/git.png" alt="git"><span class="item__span">HTML5</span></li>
+                    <li class="techno__item"> <img src="./images/html5.png" alt="html"> <br><span
+                            class="item__span">HTML5</span></li>
+                    <li class="techno__item"> <img src="./images/css-3.png" alt="css"><span
+                            class="item__span">CSS3</span></li>
+                    <li class="techno__item"> <img src="./images/js.png" alt="js"><span
+                            class="item__span">JavaScript</span></li>
+                    <li class="techno__item"> <img src="./images/devices.png" alt="rwd"><span
+                            class="item__span">RWD</span></li>
+                    <li class="techno__item"> <img src="./images/sass.png" alt="sass"><span
+                            class="item__span">SASS</span></li>
+                    <li class="techno__item"> <img src="./images/bootstrap.png" alt="bootstrap"><span
+                            class="item__span">Bootstrap</span></li>
+                    <li class="techno__item"> <img src="./images/react.png" alt="react"><span
+                            class="item__span">React</span></li>
+                    <li class="techno__item"> <img src="./images/git.png" alt="git"><span class="item__span">GIT</span>
+                    </li>
                 </ul>
-
             </article>
-
         </section>
         <section class="projects" id="projects">
-            <h4>Projects</h4>
+            <h4 class="header">Projects</h4>
+            <div class="projects__container">
+                <article class="projects__card">
+                    <div class="projects__text">
+                        <img src="./images/daniel-korpai-2nxugQEgsOc-unsplash.jpg" alt="project1" class="projects_foto">
+                        <h5 class="projects__title">
+                            Lorem ipsum dolor sit amet.
+                        </h5>
+                        <p class="projects__info">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacinia quis vel eros donec ac odio tempor orci. Viverra adipiscing at in tellus. Curabitur vitae nunc sed velit dignissim sodales ut eu.
+                        </p>
+                        <details class="projects__details"> <summary>More...</summary>Ipsum dolor sit amet consectetur adipiscing elit duis tristique. Euismod elementum nisi quis eleifend quam. Odio morbi quis commodo odio aenean sed adipiscing diam.</details>
+                    </div>
+                </article>
+                <article class="projects__card">
+                    <div class="projects__text">
+                            <img src="./images/daniel-korpai-QEShRYXOs60-unsplash.jpg" alt="project2" class="projects_foto">
+                        <h5 class="projects__title">
+                            Lorem ipsum dolor sit amet.
+                        </h5>
+                        <p class="projects__info">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacinia quis vel eros donec ac odio tempor orci. Viverra adipiscing at in tellus. Curabitur vitae nunc sed velit dignissim sodales ut eu.
+                        </p>
+                        <details class="projects__details"><summary>More...</summary>Ipsum dolor sit amet consectetur adipiscing elit duis tristique. Euismod elementum nisi quis eleifend quam. Odio morbi quis commodo odio aenean sed adipiscing diam.</details>
+                    </div>
+                </article>
+                <article class="projects__card">
+                    <div class="projects__text">
+                            <img src="./images//daniel-korpai-vHVfpi3h5xk-unsplash.jpg" alt="project3" class="projects_foto">
+                        <h5 class="projects__title">
+                            Lorem ipsum dolor sit amet.
+                        </h5>
+                        <p class="projects__info">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacinia quis vel eros donec ac odio tempor orci. Viverra adipiscing at in tellus. Curabitur vitae nunc sed velit dignissim sodales ut eu.
+                        </p>
+                        <details class="projects__details"><summary>More...</summary>Ipsum dolor sit amet consectetur adipiscing elit duis tristique. Euismod elementum nisi quis eleifend quam. Odio morbi quis commodo odio aenean sed adipiscing diam.</details>
+                    </div>
+                </article>
+            </div>
         </section>
         <footer class="contact" id="contact">
-            <h4>Contact</h4>
+            <h4 class="header">Contact</h4>
         </footer>
-    </div>
 
 </body>
 
