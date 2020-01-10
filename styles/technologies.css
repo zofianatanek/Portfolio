@@ -1,0 +1,57 @@
+@media only screen and (max-width: 450px) {
+  .techno__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex: 1 0 40%;
+    margin: 2%;
+  }
+  .techno__icon {
+    align-self: center;
+  }
+}
+
+@media only screen and (min-width: 450px) {
+  .techno__item {
+    flex: 1 0 21%;
+    height: 150px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .about__techno {
+    width: 60%;
+  }
+  .techno__item {
+    flex: 1 0 18%;
+    height: 150px;
+  }
+}
+
+/*...........GLOBAL..........*/
+.techno__container {
+  list-style: none;
+  margin: 10% 0 10% 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0;
+}
+
+.techno__container .techno__item {
+  font-size: 48px;
+}
+
+.techno__container .techno__item .icon {
+  max-width: 48px;
+}
+
+.techno__container .techno__item .icon::before {
+  color: #d1a23e;
+}
+
+.techno__container .techno__item .item__span {
+  font-size: 20px;
+  color: #d1a23e;
+}

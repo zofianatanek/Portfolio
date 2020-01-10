@@ -6,73 +6,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Zofia Natanek | Front-end developer</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Advent+Pro&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/about.css">
+    <link rel="stylesheet" href="./styles/technologies.css">
+
+
+
 </head>
 
 <body>
-    <main class="home" id="home">
-        <article class="descript">
-            <h3 class="descript__header">
-                Hello.
-            </h3>
-            <p class="descript__p">
-                My name is <span class="name">Zofia Natanek</span> I am begginner Front-end developer. Feel welcome to
-                check my projects.
-            </p>
-            <div class="descript__scroll"><img onclick="myScroll()" class="descript__arrow" src="./images/arrow.png"
-                    alt="arrow" width="30px"></div>
-        </article>
-    </main>
-    <nav class="menu" id="menu">
+    <div class="container-fulid home" id="home">
+        <div class="row">
+            <div class="col-6 descript">
+                <h3 class="descript__header">
+                    Hello.
+                </h3>
+                <p class="descript__p">
+                    My name is <span class="name">Zofia Natanek</span> I am begginner Front-end developer. Feel welcome
+                    to
+                    check my projects.
+                </p>
+                <div class="descript__scroll"><img onclick="myScroll()" class="descript__arrow" src="./images/arrow.png"
+                        alt="arrow" width="30px"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <nav class="menu" id="menu">
         <ul class="menu__list">
             <li class="menu__listitem"><a class="menu__links" href="#home">Home</a></li>
             <li class="menu__listitem"><a class="menu__links" href="#about">About</a></li>
             <li class="menu__listitem"><a class="menu__links" href="#projects">Pojects</a></li>
             <li class="menu__listitem"><a class="menu__links" href="#contact">Contact</a></li>
         </ul>
+    </nav> -->
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light menu" id="menu">
+        <a class="navbar-brand menu__brand" href="#">ZN</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link menu__links" href="#about">About me</a>
+                <a class="nav-item nav-link menu__links" href="#skills">Skills</a>
+                <a class="nav-item nav-link menu__links" href="#projects">Projects</a>
+                <a class="nav-item nav-link menu__links" href="#contact">Contact</a>
+            </div>
+        </div>
     </nav>
     <section class="about" id="about">
         <article class="about__me">
-            <h4 class="about__header">About me</h4>
-            <p class="about__p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et
-                dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus. Eget nullam non nisi est
-                sit
-                amet facilisis magna etiam.
-            </p>
-            <p class="about__p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et
-                dolore magna aliqua.
-            </p>
+            <div class="row">
+                <div class="col-7">
+                    <h4 class="about__header">About me</h4>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde illo doloribus temporibus explicabo
+                    tempore rerum accusantium, perspiciatis expedita libero, maiores, illum beatae!
+                </div>
+                <div class="col-5"> <img src="./images/Artboard – 1.jpg" alt="me"> </div>
+            </div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eum minima quasi dolor! Atque distinctio
+            voluptatum consequuntur, ab, in, cupiditate fugit nihil dolore non asperiores praesentium facere ullam vel
+            vitae?
+            <div class="container">
+            </div>
         </article>
         <article class="about__techno">
             <h3 class="header">Technologies</h3>
             <ul class="techno__container">
-                <li class="techno__item"> <img class="techno__icon" src="./images/html5.png" alt="html"><span
+                <li class="techno__item"> <i class="fab fa-html5 icon"></i><span
                         class="item__span">HTML5</span></li>
-                <li class="techno__item"> <img class="techno__icon" src="./images/css-3.png" alt="css"><span
+                <li class="techno__item"> <i class="fab fa-css3-alt icon"></i><span
                         class="item__span">CSS3</span></li>
-                <li class="techno__item"> <img class="techno__icon" src="./images/js.png" alt="js"><span
+                <li class="techno__item"> <i class="fab fa-js icon"></i><span
                         class="item__span">JavaScript</span></li>
-                <li class="techno__item"> <img class="techno__icon" src="./images/devices.png" alt="rwd"><span
+                <li class="techno__item"> <img class="icon" src="./images/devices.png" alt="rwd"><span
                         class="item__span">RWD</span></li>
-                <li class="techno__item"> <img class="techno__icon" src="./images/sass.png" alt="sass"><span
+                <li class="techno__item"> <i class="fab fa-sass icon"></i><span
                         class="item__span">SASS</span></li>
-                <li class="techno__item"> <img class="techno__icon" src="./images/bootstrap.png" alt="bootstrap"><span
+                <li class="techno__item"> <i class="fab fa-bootstrap icon"></i><span
                         class="item__span">Bootstrap</span></li>
-                <li class="techno__item"> <img class="techno__icon" src="./images/react.png" alt="react"><span
+                <li class="techno__item"> <i class="fab fa-react icon"></i><span
                         class="item__span">React</span></li>
-                <li class="techno__item"> <img class="techno__icon" src="./images/git.png" alt="git"><span
+                <li class="techno__item"><i class="fab fa-git icon"></i><span
                         class="item__span">GIT</span>
                 </li>
+                <li class="techno__item"><i class="fab fa-node-js icon"></i><span
+                        class="item__span">NodeJS</span>
+                </li>
+                <li class="techno__item"><i class="fas fa-database icon"></i><span
+                    class="item__span">mongoDB</span>
+            </li>
+                
             </ul>
         </article>
+
     </section>
     <section class="projects" id="projects">
         <h4 class="header">Projects</h4>
@@ -154,24 +191,33 @@
         </form>
     </footer>
     <script>
-            function myScroll() {
-                var elem = document.getElementById("menu");
-                elem.scrollIntoView({ behavior: "smooth" });
-            }
-    
-            var menu = document.getElementById("menu");
-            var fixed = menu.offsetTop;
-    
-            function onScrolling() {
-     
-                if (window.pageYOffset >= fixed) {
-                    menu.classList.add("menu__fixed")
-                } else {
-                    menu.classList.remove("menu__fixed");
-                }
-            }
-            window.onscroll = function () { onScrolling() }
-        </script>
+        function myScroll() {
+            var elem = document.getElementById("menu");
+            elem.scrollIntoView({ behavior: "smooth" });
+        }
+
+        var menu = document.getElementById("menu");
+        var fixed = menu.offsetTop;
+
+        // function onScrolling() {
+
+        //     if (window.pageYOffset >= fixed) {
+        //         menu.classList.add("menu__fixed")
+        //     } else {
+        //         menu.classList.remove("menu__fixed");
+        //     }
+        // }
+        // window.onscroll = function () { onScrolling() }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

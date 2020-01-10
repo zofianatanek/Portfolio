@@ -1,0 +1,18 @@
+.about__me {
+  background-color: #D1A23E;
+}
+
+.about__me .row .col-7 {
+  color: white;
+}
+
+.about__me .row .col-7 .about__header {
+  color: white;
+}
+
+.about__me .row img {
+  position: absolute;
+  top: -30px;
+  max-width: 100%;
+  height: auto;
+}
