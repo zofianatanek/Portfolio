@@ -12,12 +12,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/about.css">
-    <link rel="stylesheet" href="./styles/technologies.css">
-
-
+    <link rel="stylesheet" href="./styles/footer.css">
 
 </head>
 
@@ -39,15 +35,6 @@
         </div>
     </div>
 
-    <!-- <nav class="menu" id="menu">
-        <ul class="menu__list">
-            <li class="menu__listitem"><a class="menu__links" href="#home">Home</a></li>
-            <li class="menu__listitem"><a class="menu__links" href="#about">About</a></li>
-            <li class="menu__listitem"><a class="menu__links" href="#projects">Pojects</a></li>
-            <li class="menu__listitem"><a class="menu__links" href="#contact">Contact</a></li>
-        </ul>
-    </nav> -->
-
     <nav class="navbar sticky-top navbar-expand-lg navbar-light menu" id="menu">
         <a class="navbar-brand menu__brand" href="#">ZN</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -57,10 +44,10 @@
 
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link menu__links" href="#about">About me</a>
-                <a class="nav-item nav-link menu__links" href="#skills">Skills</a>
-                <a class="nav-item nav-link menu__links" href="#projects">Projects</a>
-                <a class="nav-item nav-link menu__links" href="#contact">Contact</a>
+                <span class="nav-item nav-link menu__links" onclick="Scroll('about')">About me</span>
+                <span class="nav-item nav-link menu__links" onclick="Scroll('about')">Skills</span>
+                <span class="nav-item nav-link menu__links" onclick="Scroll('projects')">Projects</span>
+                <span class="nav-item nav-link menu__links" onclick="Scroll('contact')">Contact</span>
             </div>
         </div>
     </nav>
@@ -69,118 +56,127 @@
             <div class="row">
                 <div class="col-7">
                     <h4 class="about__header">About me</h4>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde illo doloribus temporibus explicabo
-                    tempore rerum accusantium, perspiciatis expedita libero, maiores, illum beatae!
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde illo doloribus temporibus explicabo
+                        tempore rerum accusantium, perspiciatis expedita libero, maiores, illum beatae!</p>
                 </div>
                 <div class="col-5"> <img src="./images/Artboard – 1.jpg" alt="me"> </div>
             </div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eum minima quasi dolor! Atque distinctio
-            voluptatum consequuntur, ab, in, cupiditate fugit nihil dolore non asperiores praesentium facere ullam vel
-            vitae?
             <div class="container">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eum minima quasi dolor! Atque
+                    distinctio
+                    voluptatum consequuntur, ab, in, cupiditate fugit nihil dolore non asperiores praesentium facere
+                    ullam vel
+                    vitae?
+                </p>
             </div>
         </article>
         <article class="about__techno">
             <h3 class="header">Technologies</h3>
             <ul class="techno__container">
-                <li class="techno__item"> <i class="fab fa-html5 icon"></i><span
-                        class="item__span">HTML5</span></li>
-                <li class="techno__item"> <i class="fab fa-css3-alt icon"></i><span
-                        class="item__span">CSS3</span></li>
-                <li class="techno__item"> <i class="fab fa-js icon"></i><span
-                        class="item__span">JavaScript</span></li>
+                <li class="techno__item"> <i class="fab fa-html5 icon"></i><span class="item__span">HTML5</span></li>
+                <li class="techno__item"> <i class="fab fa-css3-alt icon"></i><span class="item__span">CSS3</span></li>
+                <li class="techno__item"> <i class="fab fa-js icon"></i><span class="item__span">JavaScript</span></li>
                 <li class="techno__item"> <img class="icon" src="./images/devices.png" alt="rwd"><span
                         class="item__span">RWD</span></li>
-                <li class="techno__item"> <i class="fab fa-sass icon"></i><span
-                        class="item__span">SASS</span></li>
-                <li class="techno__item"> <i class="fab fa-bootstrap icon"></i><span
-                        class="item__span">Bootstrap</span></li>
-                <li class="techno__item"> <i class="fab fa-react icon"></i><span
-                        class="item__span">React</span></li>
-                <li class="techno__item"><i class="fab fa-git icon"></i><span
-                        class="item__span">GIT</span>
+                <li class="techno__item"> <i class="fab fa-sass icon"></i><span class="item__span">SASS</span></li>
+                <li class="techno__item"> <i class="fab fa-bootstrap icon"></i><span class="item__span">Bootstrap</span>
                 </li>
-                <li class="techno__item"><i class="fab fa-node-js icon"></i><span
-                        class="item__span">NodeJS</span>
+                <li class="techno__item"> <i class="fab fa-react icon"></i><span class="item__span">React</span></li>
+                <li class="techno__item"><i class="fab fa-git icon"></i><span class="item__span">GIT</span>
                 </li>
-                <li class="techno__item"><i class="fas fa-database icon"></i><span
-                    class="item__span">mongoDB</span>
-            </li>
-                
+                <li class="techno__item"><i class="fab fa-node-js icon"></i><span class="item__span">NodeJS</span>
+                </li>
+                <li class="techno__item"><i class="fas fa-database icon"></i><span class="item__span">mongoDB</span>
+                </li>
+
             </ul>
         </article>
 
     </section>
     <section class="projects" id="projects">
         <h4 class="header">Projects</h4>
-        <div class="projects__container">
-            <article class="projects__card">
-                <div class="projects__text">
-                    <img src="./images/daniel-korpai-2nxugQEgsOc-unsplash.jpg" alt="project1" class="projects_foto">
-                    <h3 class="projects__title">
-                        Ac turpis
-                    </h3>
-                    <p class="projects__info">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Lacinia quis vel eros donec ac odio tempor orci. Viverra
-                        adipiscing at in tellus. Curabitur vitae nunc sed velit dignissim sodales ut eu.
-                    </p>
-                    <details class="projects__details">
-                        <summary class="more">More...</summary>Ipsum dolor sit amet consectetur adipiscing elit duis
-                        tristique. Euismod elementum nisi quis eleifend quam. Odio morbi quis commodo odio aenean sed
-                        adipiscing diam.
-                    </details>
+        <div class="row project__cards">
+            <div class="col-lg-4 col-md-6 col-sm-12 project__card">
+                <div class="project">
+                    <img src="./images/daniel-korpai-2nxugQEgsOc-unsplash.jpg" alt="proj" class="project__img"></img>
+                    <div class="more"><i class="fas fa-ellipsis-h"></i></div>
+                    <div class="overlay">
+                        <div class="details">
+                            <h6>Chess game</h6>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias qui mollitia nisi
+                                distinctio quis in dolorem, eligendi, incidunt animi assumenda expedita harum nulla
+                                cupiditate ipsa tenetur beatae aliquam ipsam ipsum.
+                            </p>
+                            <p class="technology">
+                                Technologies: <i class="fab fa-js"></i> <i class="fab fa-html5"></i> <i
+                                    class="fab fa-css3-alt"></i> webpack
+                            </p>
+                            <div class="links">
+                                Check the repository: <a href="https://github.com/zofianatanek/cc5.Chess"><i
+                                        class="fab fa-github icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </article>
-            <article class="projects__card">
-                <div class="projects__text">
-                    <img src="./images/daniel-korpai-QEShRYXOs60-unsplash.jpg" alt="project2" class="projects_foto">
-                    <h3 class="projects__title">
-                        Viverra tellus in
-                    </h3>
-                    <p class="projects__info">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Lacinia quis vel eros donec ac odio tempor orci. Viverra
-                        adipiscing at in tellus. Curabitur vitae nunc sed velit dignissim sodales ut eu.
-                    </p>
-                    <details class="projects__details">
-                        <summary>More...</summary>Ipsum dolor sit amet consectetur adipiscing elit duis tristique.
-                        Euismod elementum nisi quis eleifend quam. Odio morbi quis commodo odio aenean sed adipiscing
-                        diam.
-                    </details>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 project__card">
+                <div class="project">
+                    <img src="./images/daniel-korpai-2nxugQEgsOc-unsplash.jpg" alt="proj" class="project__img"></img>
+                    <div class="more"><i class="fas fa-ellipsis-h"></i></div>
+                    <div class="overlay">
+                        <div class="details">
+                            <h6>Lingua Challenge App</h6>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias qui mollitia nisi
+                                distinctio quis in dolorem, eligendi, incidunt animi assumenda expedita harum nulla
+                                cupiditate ipsa tenetur beatae aliquam ipsam ipsum.
+                            </p>
+                            <p class="technology">
+                                Technologies: <i class="fab fa-js"></i> <i class="fab fa-html5"></i> <i
+                                    class="fab fa-css3-alt"></i> webpack
+                            </p>
+                            <div class="links">
+                                Check the repository: <a href="https://github.com/zofianatanek/cc5.Chess"><i
+                                        class="fab fa-github icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-            </article>
-            <article class="projects__card">
-                <div class="projects__text">
-                    <img src="./images//daniel-korpai-vHVfpi3h5xk-unsplash.jpg" alt="project3" class="projects_foto">
-                    <h3 class="projects__title">
-                        non tellus orci
-                    </h3>
-                    <p class="projects__info">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Lacinia quis vel eros donec ac odio tempor orci. Viverra
-                        adipiscing at in tellus. Curabitur vitae nunc sed velit dignissim sodales ut eu.
-                    </p>
-                    <details class="projects__details">
-                        <summary>More...</summary>Ipsum dolor sit amet consectetur adipiscing elit duis tristique.
-                        Euismod elementum nisi quis eleifend quam. Odio morbi quis commodo odio aenean sed adipiscing
-                        diam.
-                    </details>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 project__card">
+                <div class="project">
+                    <img src="./images/daniel-korpai-2nxugQEgsOc-unsplash.jpg" alt="proj" class="project__img"></img>
+                    <div class="more"><i class="fas fa-ellipsis-h"></i></div>
+                    <div class="overlay">
+                        <div class="details">
+                            <h6>myFridge App</h6>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias qui mollitia nisi
+                                distinctio quis in dolorem, eligendi, incidunt animi assumenda expedita harum nulla
+                                cupiditate ipsa tenetur beatae aliquam ipsam ipsum.
+                            </p>
+                            <p class="technology">
+                                Technologies: <i class="fab fa-js"></i> <i class="fab fa-html5"></i> <i
+                                    class="fab fa-css3-alt"></i> webpack
+                            </p>
+                            <div class="links">
+                                Check the repository: <a href="https://github.com/zofianatanek/cc5.Chess"><i
+                                        class="fab fa-github icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </article>
+            </div>
+        </div>
         </div>
     </section>
-    <footer class="contact" id="contact">
+
+    <footer class="footer" id="contact">
         <h4 class="contact__header">Contact</h4>
         <div class="contact__info">
-            <section class="form">
-                <form class="contact__form">
-                    <input class="form__name" type="text" id="name" placeholder="Full name"> <input class="form__email"
-                        type="email" id="email" placeholder="E-mail adress"><br>
-                    <textarea class="form__textarea" name="" id="" cols="47" rows="10" placeholder="Message"></textarea>
-                    <br>
-                    <button class="form__button">Send</button>
-            </section>
             <section class="socialmedia">
                 <div class="socialmedia__icon"> <img src="./images/linkedin (1).png" alt="linkedin"> </div>
                 <div class="socialmedia__icon"> <img src="./images/github (2).png" alt="github"> </div>
@@ -196,8 +192,14 @@
             elem.scrollIntoView({ behavior: "smooth" });
         }
 
-        var menu = document.getElementById("menu");
-        var fixed = menu.offsetTop;
+        // var menu = document.getElementById("menu");
+        // var fixed = menu.offsetTop;
+
+        function Scroll(id) {
+            var elem = document.getElementById(id);
+            elem.scrollIntoView({ behavior: "smooth" });
+        }
+
 
         // function onScrolling() {
 

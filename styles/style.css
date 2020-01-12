@@ -2,7 +2,7 @@
 /* ---------------------------RESOLUTION < 450px--------------------------- */
 
 @media only screen and (max-width: 450px){
-  .home {
+  /* .home {
     box-sizing: border-box;
     margin: 0;
     height: 100vh;
@@ -30,21 +30,21 @@
   }
   .descript__arrow {
     float: none;
-  }
-  .menu__list {
+  } */
+  /* .menu__list {
     padding: 0;
     max-width: 100%;
     text-align: left;
-  }
-  .about {
+  } */
+  /* .about {
     display: block;
   }
   .about__header {
     font-size: 16px;
-  } 
-  .header {
+  }  */
+  /* .header {
     font-size: 16px;
-  }
+  } */
   /* .techno__item {
     display: flex;
     flex-wrap: wrap;
@@ -79,7 +79,7 @@
 
 @media only screen and (min-width: 450px){
   
-  .home {
+  /* .home {
      display: flex;
      flex-direction: column;
      align-items: left;
@@ -97,16 +97,16 @@
    }
    .descript__arrow {
      float: right;
-   }
-   .about {
+   } */
+   /* .about {
     display: block;
    }
    .about__header {
     font-size: 18px;
-  }
-   .header {
+  } */
+   /* .header {
     font-size: 18px;
-  }
+  } */
    /* .techno__item {
     flex: 1 0 21%;
     height: 150px;
@@ -117,11 +117,11 @@
   
 
     /* --------------Projects-------------- */
-  .projects__container {
+  /* .projects__container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-  }
+  } */
   .contact__header {
     font-size: 18px;
   }
@@ -140,7 +140,7 @@
 @media only screen and (min-width: 600px){
 
   /* --------------Home section-------------- */
-  .home {
+  /* .home {
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -158,10 +158,10 @@
   }
   .descript__arrow {
     float: right;
-  }
+  } */
 
     /* --------------About me section-------------- */
-  .about {
+  /* .about {
     height: 100vh;
     display: flex;
     flex-direction: row-reverse;
@@ -171,13 +171,13 @@
   }
   .about__header {
     font-size: 20px;
-  }
-  .about__techno {
+  } */
+  /* .about__techno {
     width: 60%;
-  }
-  .header {
+  } */
+  /* .header {
     font-size: 20px;
-  }
+  } */
   /* .techno__item {
     flex: 1 0 21%;
     height: 150px;
@@ -220,7 +220,7 @@
 
 /* SCROLL ANIMATION */
 
-.descript__arrow {
+/* .descript__arrow {
   position: relative;
   animation-name: scrollanimation;
   animation-duration: 2s;
@@ -239,25 +239,25 @@
   80% {opacity: 20%; left: 0px; top: 40px}
   90% {opacity: 10%; left: 0px; top: 45px}
   100% {opacity: 0; left: 0px; top: 50px}
-}
+} */
 
 
 /* ABOUT SECTION */
 
 /* ABOUT ME */
-.about__me {
+/* .about__me {
   color: white;
   padding: 5% 5% 2% 2%;
   text-align: justify;
-}
+} */
 
-.about__header {
+/* .about__header {
   margin-bottom: 10%;
-}
+} */
 
-.about__p {
+/* .about__p {
   padding: 2.5% 0 2.5% 0;
-}
+} */
 
 .about__techno {
   padding: 5% 4% 2% 5%;
@@ -266,38 +266,38 @@
 /* TECHNOLOGIES */
 
 
-.techno__item {
+/* .techno__item {
   text-align: center;
-}
-
+} */
+/* 
 .techno__icon {
   max-width: 64px;
-}
-.techno__item:hover {
+} */
+/* .techno__item:hover {
   position: relative;
   transition: all .2s ease-in-out; 
   transform: scale(1.3);
   animation: floattext 2s inifnite;
-}
+} */
 
-.item__span {
+/* .item__span {
   display: none;
   position: relative;
   animation: floattext 0.5s;
   animation-play-state: paused;
   color: var(--main-color);
-}
-.techno__item:hover > .item__span{
+} */
+/* .techno__item:hover > .item__span{
   display: block;
   position: relative;
   animation-play-state: running;
-}
+} */
 
-@keyframes floattext{
+/* @keyframes floattext{
   0% { opacity: 0; top: 20px}
   50% {opacity: 100%; top: 10px}
   100% {opacity: 100%; top: 0px}
-}
+} */
 
 /* PROJECTS SECTION */
 
@@ -329,7 +329,6 @@
   padding: 2% 4% 2% 4%;
   text-align: justify;
 }
-
 /* FOOTER */
 
 .contact__header {
@@ -367,7 +366,7 @@
   margin: 5px;
   border: none;
   border-radius: 8px;
-}
+} */
 
 .form__button {
   background-color: white;

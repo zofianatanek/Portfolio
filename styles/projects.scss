@@ -1,0 +1,86 @@
+// variables
+$main-color: #d1a23e;
+$second-color: #57534c;
+
+@media only screen and (min-width: 450px) {
+  .projects__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.row.project__cards {
+  display: flex;
+  justify-content: center;
+}
+.project__card {
+  display: flex;
+  justify-content: center;
+  width: 340px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  .project {
+    position: relative;
+    max-width: 340px;
+    max-height: 340px;
+    .more {
+      position: absolute;
+      bottom: 5px;
+      left: 10px;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 100%;
+      background-color: $main-color;
+      opacity: 90%;
+      overflow: hidden;
+      width: 340px;
+      height: 0;
+      transition: 0.5s ease;
+      .details {
+        box-sizing: border-box;
+        padding: 20px 20px 10px 20px;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        .description {
+          font-size: 14px;
+          text-align: justify;
+        }
+        .technology {
+          font-size: 14px;
+          text-align: left;
+          .fab {
+            font-size: 18px;
+            margin: 0 5px 0 5px;
+          }
+        }
+        .links {
+          font-size: 14px;
+          text-align: left;
+          a {
+            color: white;
+            margin: 0 10px 0 10px;
+            .fab {
+              font-size: 20px;
+              &:hover {
+                transform: scale(1.5);
+              }
+            }
+          }
+        }
+      }
+    }
+    .project__img {
+      max-width: 340px;
+      height: auto;
+    }
+  }
+}
+.project:hover .overlay {
+  bottom: 0;
+  height: 340px;
+}

@@ -1,25 +1,66 @@
 // variables
-$main-color :  #D1A23E;
-$second-color: #57534C;
+$main-color: #d1a23e;
+$second-color: #57534c;
 
-.about__me{
-    background-color: $main-color;
-    .row {
-        .col-7 {
-            color: white;
-            .about__header {
-                color: white;
-            }
-        }
-        // .col-5 img{
-        //     opacity: 50%;
-        // }
-        img {
-            position: absolute;
-            top: -30px;
-           max-width: 100%;
-           height: auto;
-        }
+@media only screen and (max-width: 450px) {
+  .about {
+    display: block;
+    .about__header {
+      font-size: 16px;
     }
-    
+  }
+}
+
+@media only screen and (min-width: 450px) {
+  .about {
+    display: block;
+    .about__header {
+      font-size: 18px;
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .about {
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    .about__me {
+      width: 40%;
+      .about__header {
+        font-size: 20px;
+        margin-bottom: 10%;
+      }
+    }
+  }
+}
+
+.about__me {
+  background-color: $main-color;
+  padding: 5% 5% 2% 2%;
+  text-align: justify;
+
+  .row {
+    .col-7 {
+      .about__header {
+        color: white;
+         margin-bottom: 10%;
+      }
+      p {
+        color: white;
+      }
+    }
+    img {
+      position: absolute;
+      top: -30px;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .container{
+      padding: 0;
+      p {
+          color: white;
+      }
+  }
 }
