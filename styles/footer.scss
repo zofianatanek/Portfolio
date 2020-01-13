@@ -2,6 +2,55 @@
 $main-color: #d1a23e;
 $second-color: #57534c;
 
-.footer{
-    background-color: $main-color;
+@media only screen and (max-width: 450px) {
+  .contact__header {
+    font-size: 16px;
+  }
+  .contact__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 450px) {
+  .contact__header {
+    font-size: 18px;
+  }
+  .contact__info {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.footer {
+  background-color: $main-color;
+  padding: 2% 4% 1% 5%;
+  .contact__header {
+    color: white;
+  }
+  .contact__info {
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .contact {
+      display: flex;
+      color: white;
+      list-style: none;
+      li {
+        padding: 0 20px 0 20px;
+        i {
+          color: white;
+          font-size: 20px;
+          padding: 4px;
+        }
+      }
+    }
+  }
+  p {
+    color: white;
+    font-size: 12px;
+  }
 }

@@ -10,6 +10,20 @@ $second-color: #57534c;
   }
 }
 
+@media only screen and (min-width: 600px) {
+  .projects__container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.projects {
+  padding: 2% 5% 2% 5%;
+  margin-bottom: 5%;
+}
+
 .row.project__cards {
   display: flex;
   justify-content: center;
@@ -75,8 +89,8 @@ $second-color: #57534c;
       }
     }
     .project__img {
-      max-width: 340px;
-      height: auto;
+      width: 340px;
+      height: 340px;
     }
   }
 }

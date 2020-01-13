@@ -55,7 +55,7 @@
   .techno__icon {
     align-self: center;
   } */
-  .contact__header {
+  /* .contact__header {
     font-size: 16px;
   }
   .contact__info {
@@ -72,7 +72,7 @@
   .socialmedia {
     padding: 2%;
     width: 100%;
-  }
+  } */
 
 }
 /* ---------------------------450px < RESOLUTION < 599px--------------------------- */
@@ -111,9 +111,9 @@
     flex: 1 0 21%;
     height: 150px;
   } */
-  .socialmedia {
+  /* .socialmedia {
     width: 30%; 
-  }
+  } */
   
 
     /* --------------Projects-------------- */
@@ -122,7 +122,7 @@
     justify-content: center;
     flex-wrap: wrap;
   } */
-  .contact__header {
+  /* .contact__header {
     font-size: 18px;
   }
   .contact__info {
@@ -132,7 +132,7 @@
   .form {
     width: 70%;
     text-align: right;
-  }
+  } */
   
  }
 /* ---------------------------RESOLUTION > 600px--------------------------- */
@@ -183,13 +183,13 @@
     height: 150px;
   } */
 /* --------------Projects-------------- */
-  .projects__container {
+  /* .projects__container {
     min-height: 100vh;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-  }
-  .contact__info {
+  } */
+  /* .contact__info {
     display: flex;
     flex-direction: row-reverse;
   }
@@ -202,7 +202,7 @@
   .form {
     width: 70%;
     text-align: right;
-  }
+  } */
 
 }
 
@@ -259,9 +259,9 @@
   padding: 2.5% 0 2.5% 0;
 } */
 
-.about__techno {
+/* .about__techno {
   padding: 5% 4% 2% 5%;
-}
+} */
 
 /* TECHNOLOGIES */
 
@@ -301,18 +301,18 @@
 
 /* PROJECTS SECTION */
 
-.projects {
+/* .projects {
   padding: 2% 5% 2% 5%;
   margin-bottom: 5%;
-}
-.projects__card {
+} */
+/* .projects__card {
   margin-top: 5%;
   text-align: center;
   max-width: 330px;
   background-color: #F5F5F5;
   box-shadow: 10px 10px 5px 0px rgba(179,173,179,0.53);
-}
-.projects_foto {
+} */
+/* .projects_foto {
   max-width: 330px;
   width: 100%;
   height: auto;
@@ -328,56 +328,18 @@
 .projects__details {
   padding: 2% 4% 2% 4%;
   text-align: justify;
-}
+} */
 /* FOOTER */
 
-.contact__header {
+/* .contact__header {
   color: white;
-}
-.contact {
+} */
+/* .contact {
   padding: 2% 5% 2% 5%;
   background-color: var(--main-color);
-}
-.form__name {
-  max-width: 200px;
-  width: 100%;
-  height: 30px;
-  opacity: 80%;
-  padding: 5px;
-  margin: 5px;
-  border: none;
-  border-radius: 8px;
-}
-.form__email {
-  max-width: 290px;
-  width: 100%;
-  height: 30px;
-  opacity: 80%;
-  padding: 5px;
-  margin: 5px;
-  border: none;
-  border-radius: 8px;
-}
-.form__textarea {
-  max-width: 500px;
-  width: 100%;
-  opacity: 80%;
-  padding: 5px;
-  margin: 5px;
-  border: none;
-  border-radius: 8px;
 } */
 
-.form__button {
-  background-color: white;
-  opacity: 80%;
-  padding: 5px;
-  margin: 5px;
-  border: none;
-  border-radius: 8px
-}
-
-.socialmedia {
+/* .socialmedia {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -392,7 +354,7 @@
 .socialmedia img:hover{
   transition: all .2s ease-in-out; 
   transform: scale(1.5);
-}
+} */
 
 /* Background image: Photo by Leone Venter on Unsplash  */
 /* Photo by Daniel Korpai on Unsplash */
